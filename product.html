@@ -17,9 +17,24 @@
       </ul>
       <h2>Cart</h2>
     </nav>
-    <section>
-      <div id="dataAdded"></div>
-    </section>
+    <div class="mainSection">
+      <section class="sectionA">
+        <button onclick="lth()">sort_lth_price</button> <br />
+        <br />
+        <button onclick="htl()">sort_htl_price</button> <br />
+        <br />
+        <select name="" id="datas" onchange="selectDatas()">
+          <option value="">Select Value</option>
+          <option value="facewash">Facewash</option>
+          <option value="lotion">Lotion</option>
+          <option value="cream">Cream</option>
+          <option value="sunscream">Sunscream</option>
+        </select>
+      </section>
+      <section class="sectionB">
+        <div id="dataAdded"></div>
+      </section>
+    </div>
   </body>
 </html>
 <script src="scripts/product.js"></script>
